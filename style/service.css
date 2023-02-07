@@ -38,4 +38,36 @@ a {
 	padding-top: 40px;
 }
 
+img {
+	padding-top: 20px;
+}
+
+.nav {
+    background-color:#ccc;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.link {
+    text-decoration: none;
+    color: black;
+    /* border-right: 1px solid black; */
+    background-color: #ccc;
+    height: 40px;
+    padding-top: 10px;
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    background-color: blue;
+}
+
 
