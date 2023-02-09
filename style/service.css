@@ -24,7 +24,7 @@ a {
 }
 
 .services {
-	display: flex;
+	display: block;
 	justify-content: space-between;
 	padding-top: 40px;
 }
@@ -32,6 +32,7 @@ a {
 .head {
 	color: blue;
 	padding-top: 40px;
+    text-align: center;
 }
 
 .lay {
@@ -43,7 +44,7 @@ img {
 }
 
 .nav {
-    background-color:#ccc;
+    /* background-color:#ccc; */
     width: 500px;
     text-align: center;
     display: flex;
@@ -53,9 +54,9 @@ img {
 
 .link {
     text-decoration: none;
-    color: black;
+    /* color: black; */
     /* border-right: 1px solid black; */
-    background-color: #ccc;
+    /* background-color: #ccc; */
     height: 40px;
     padding-top: 10px;
     width: 100px;
@@ -63,11 +64,67 @@ img {
 
 a {
     text-decoration: none;
-    color: black;
+    /* color: black; */
 }
 
-.link:hover {
-    background-color: blue;
+a:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 
+
+
+
+body {
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab); */
+    background-size: 300% 300%;
+    background-color: rgb(199, 176, 176);
+    /* animation: color 12s ease-in-out infinite; */
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+
+.sanidad {
+    /* color: blue; */
+    animation: colors 12s ease-in-out infinite;
+} 
+
+@keyframes colors {
+    0% {
+        color: blue;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+
+.second {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.first {
+    display: flex;
+    justify-content: space-between;
+}

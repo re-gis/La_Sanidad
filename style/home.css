@@ -22,7 +22,7 @@ body {
     text-decoration: none;
     color: black;
     /* border-right: 1px solid black; */
-    background-color: #ccc;
+    /* background-color: #ccc; */
     height: 40px;
     padding-top: 10px;
     width: 100px;
@@ -33,9 +33,6 @@ a {
     color: black;
 }
 
-.link:hover {
-    background-color: blue;
-}
 
 
 
@@ -70,7 +67,7 @@ img {
 }
 
 .nav {
-    background-color:#ccc;
+    /* background-color:#ccc; */
     width: 500px;
     text-align: center;
     display: flex;
@@ -79,7 +76,55 @@ img {
 
 
 
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+.sanidad {
+    /* color: blue; */
+    animation: colors 12s ease-in-out infinite;
+}
+
+@keyframes colors {
+    0% {
+        color: blue;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
 
 
 
+/* @keyframes movement {
+    0% {
+        
+    }
+} */
 
+
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
